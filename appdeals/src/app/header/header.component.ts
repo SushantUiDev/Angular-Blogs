@@ -3,9 +3,14 @@ import {Component} from '@angular/core' ;
 /*Decorate component*/
 	@Component({
 		selector:"appheader-root",
-		template:"<h1>I am header </h1>"
+		templateUrl:"./header.component.html"
 		})
 //export component
 export class HeaderComponent{
-	
+
+    contentType:"";
+    loadContent(item){
+	this.contentType=item ;
+        
+    }
 }
