@@ -7,5 +7,14 @@ import {Component} from '@angular/core' ;
 		})
 //export component
 export class RegisterComponent{
+     constructor(){
 
+	 }
+	 //creating user object which having all properties of register component
+	 user:Object={
+		 email:'sushantpaikrao1990@gmail.com'
+	 }
+	 create(){
+        console.log(this.user);
+	 }
 }

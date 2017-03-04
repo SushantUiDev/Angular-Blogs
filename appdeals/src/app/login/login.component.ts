@@ -6,4 +6,11 @@ import {Component} from '@angular/core' ;
 		templateUrl:"./login.component.html"
 		})
 //export component
-export class LoginComponent{}
+export class LoginComponent{
+	user:Object={
+
+	}
+	create(){
+		console.log(this.user);
+	}
+}
