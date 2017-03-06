@@ -14,7 +14,14 @@ export class RegisterComponent{
 	 user:Object={
 		 email:'sushantpaikrao1990@gmail.com'
 	 }
+	 
+
+	selectedCountry: String
+    countries = [{ name: "India", code: "IN" }, { name: "United States", code: "USA" },]		  
 	 create(){
         console.log(this.user);
 	 }
+	  countrySelected() {
+        console.log(this.selectedCountry);
+    }
 }
